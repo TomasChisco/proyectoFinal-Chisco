@@ -1,0 +1,103 @@
+@import "variables";
+
+.logo-pyme {
+    font-family: 'monoton', sans-serif;
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    border: 1px solid $mainColorLight;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+nav {
+    display: inline-flex;
+    font-family: 'Comfortaa';
+    font-size: 1.4rem;
+    font-weight: 300;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    
+}
+
+.mobileNavbar {
+    display: none;
+}
+
+.nav-home {
+    @include navStyle
+}
+
+
+.nav-about {
+    @include navStyle
+}
+
+
+.nav-product {
+    @include navStyle
+}
+
+
+.nav-contact {
+    @include navStyle
+}
+
+.nav-faq {
+    @include navStyle
+}
+
+.boton {
+    color: $fontColor;
+    background-color: $mainColor;
+    border: 3px solid $mainColorLight;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size:16px;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.boton:hover {
+    background:$mainColorLight radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+    color: $fontColor;
+}
+    
+.boton:active{
+    background-color:$mainColorLight;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.logo-pyme:hover {
+    box-shadow: 1px 1px $mainColorDark, 2px 2px $mainColorDark, 3px 3px $mainColorDark;
+    }
+
+.nav-home:hover {
+    @include navHoverStyle
+}
+
+.nav-about:hover {
+    @include navHoverStyle
+}
+
+.nav-product:hover {
+    @include navHoverStyle
+}
+
+.nav-contact:hover {
+    @include navHoverStyle
+}
+
+.nav-faq:hover {
+    @include navHoverStyle
+}

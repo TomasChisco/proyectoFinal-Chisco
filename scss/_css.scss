@@ -1,0 +1,213 @@
+@import "variables";
+/* INICIO CSS */
+
+/* INICIO ESTILO DE PAGINAS */
+body {
+    justify-content: center;
+    text-align: center;
+    background: $mainColor;
+    background: linear-gradient(180deg, $mainColor 0%, $mainColor 75%, $mainColorDark 100%);
+    color: $fontColor;
+}
+
+main {
+    background-color: $mainColor;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+a {
+    color: inherit;
+}
+
+/* FIN ESTILO DE PAGINAS */
+
+/* INICIO TITLES */
+
+h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px #000;
+    text-decoration-line: underline
+}
+
+h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;margin: 0px;
+    text-shadow: 2px 2px 4px #000;
+    text-decoration-line: underline
+}
+
+.about02 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0px 16px;
+    margin: 10px;
+    letter-spacing: 15px;
+    text-decoration-line: underline
+}
+
+/* FIN TITLES */
+
+/* INICIO TXT */
+
+.about {
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#nosotros {
+    padding: 15px 1px 15px 1px;
+    border: solid 10px $mainColorLight;
+    margin: 5px;
+}
+
+.contacto-numero {
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.numero {
+    color: $fontColor;
+}
+
+.question01 {
+    display: inline-block;
+    transform: translate(-25vh);
+}
+
+.question02{
+    display: inline-block;
+    transform: translate(25vh);
+}
+
+.faqA-left {
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.faqA-right {
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+/* FIN TXT */
+
+/* INICIO MULTIMEDIA */
+
+.logo-ig {
+    padding: 18px 16px;
+    margin-left: 5px;
+}
+
+.logo-fb {
+    padding: 18px 16px;
+}
+
+.logo-mail {
+    padding: 18px 16px;
+    margin-left: 5px;
+}
+
+.aboutImgs {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height: 200px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/* FIN MULTIMEDIA */
+
+/* INICIO GRID & TABLA */
+
+#grid {
+    background-color: $mainColor;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        'product01' 'product02' 'product03'
+        'product04' 'gridTable' 'product05' 
+        'product06' 'product07' 'product08'
+    ;
+}
+
+#product01 {grid-area: product01;}
+#product02 {grid-area: product02;}
+#product03 {grid-area: product03;}
+#product04 {grid-area: product04;}
+#product05 {grid-area: product05;}
+#product06 {grid-area: product06;}
+#product07 {grid-area: product07;}
+#product08 {grid-area: product08;}
+#gridTable {grid-area: gridTable;}
+
+.tabla {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: transparent;
+    padding: 16px 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.gridImg1 {
+    transition: all 0.2s ease-in-out;
+}
+.gridImg1:hover {
+    transform: rotateZ(-6deg);
+}
+.gridImg2 {
+    transition: all 0.2s ease-in-out;
+}
+.gridImg2:hover {
+    transform: rotateZ(6deg);
+}
+/* FIN GRID & TABLA */
+
+/* INICIO ANIMACIONES Y TRANSICIONES */
+
+#manoDesktop:hover {
+    animation-duration: 0.5s;
+    animation-name: zoomOutImg;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomOutImg {
+    0% {
+        height: 338;
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* FIN ANIMACIONES Y TRANSICIONES */
+
+/* FIN CSS */

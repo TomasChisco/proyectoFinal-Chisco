@@ -3,18 +3,21 @@
 body {
   justify-content: center;
   text-align: center;
-  background: #4D4545;
-  background: linear-gradient(180deg, #4D4545 0%, #4D4545 75%, #8D6262 100%);
+  background: #393E46;
+  background: linear-gradient(180deg, #393E46 0%, #393E46 75%, #222831 100%);
   color: #ffffff; }
 
 main {
-  background-color: #4D4545; }
+  background-color: #393E46; }
 
 ul {
   padding-inline-start: 0px; }
 
 a {
   color: inherit; }
+
+hr {
+  color: #00ADB5; }
 
 /* FIN ESTILO DE PAGINAS */
 /* INICIO TITLES */
@@ -53,7 +56,7 @@ h3 {
 
 #nosotros {
   padding: 15px 1px 15px 1px;
-  border: solid 10px #8D6262;
+  border: solid 10px #00ADB5;
   margin: 5px; }
 
 .contacto-numero {
@@ -114,7 +117,7 @@ h3 {
 /* FIN MULTIMEDIA */
 /* INICIO GRID & TABLA */
 #grid {
-  background-color: #4D4545;
+  background-color: #393E46;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -190,7 +193,7 @@ h3 {
   font-size: 75px;
   font-weight: 400;
   letter-spacing: 15px;
-  border: 1px solid #8D6262;
+  border: 1px solid #00ADB5;
   border-radius: 4px;
   padding: 0 15px;
   cursor: pointer;
@@ -233,8 +236,8 @@ nav {
 
 .boton {
   color: #ffffff;
-  background-color: #4D4545;
-  border: 3px solid #8D6262;
+  background-color: #393E46;
+  border: 3px solid #00ADB5;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
@@ -244,40 +247,40 @@ nav {
   transition: background 0.8s; }
 
 .boton:hover {
-  background: #8D6262 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  background: #00ADB5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
   color: #ffffff; }
 
 .boton:active {
-  background-color: #8D6262;
+  background-color: #00ADB5;
   background-size: 100%;
   transition: background 0s; }
 
 .logo-pyme:hover {
-  box-shadow: 1px 1px #8D6262, 2px 2px #8D6262, 3px 3px #8D6262; }
+  box-shadow: 1px 1px #222831, 2px 2px #222831, 3px 3px #222831; }
 
 .nav-home:hover {
   color: #ffffff;
-  background-color: #8D6262;
+  background-color: #00ADB5;
   font-size: 1.55rem; }
 
 .nav-about:hover {
   color: #ffffff;
-  background-color: #8D6262;
+  background-color: #00ADB5;
   font-size: 1.55rem; }
 
 .nav-product:hover {
   color: #ffffff;
-  background-color: #8D6262;
+  background-color: #00ADB5;
   font-size: 1.55rem; }
 
 .nav-contact:hover {
   color: #ffffff;
-  background-color: #8D6262;
+  background-color: #00ADB5;
   font-size: 1.55rem; }
 
 .nav-faq:hover {
   color: #ffffff;
-  background-color: #8D6262;
+  background-color: #00ADB5;
   font-size: 1.55rem; }
 
 footer div {
